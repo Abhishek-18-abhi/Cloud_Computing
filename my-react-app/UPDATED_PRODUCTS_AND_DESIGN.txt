@@ -1,0 +1,12 @@
+ElectroHub update
+
+- Replaced the old catalog with the 30 products from Electronic products list.pdf.
+- Added locally cropped product images from the supplied PDF.
+- Reworked the shared stylesheet across the website with a responsive dark tech-store design.
+- Updated product cards, filters, modal details, cart savings logic, and checkout so they use the PDF listed prices without inventing MRP/ratings.
+- No Google Fonts dependency was added.
+
+Run the React app:
+1. cd my-react-app
+2. npm install
+3. npm run dev
