@@ -10,13 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.57.0",
+    "@vercel/analytics": "^2.0.1",
     "axios": "^1.18.1",
     "prop-types": "^15.8.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.11.0",
-    "swiper": "^14.0.6",
-    "@supabase/supabase-js": "^2.57.0"
+    "swiper": "^14.0.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

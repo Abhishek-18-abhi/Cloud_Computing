@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import About from "./pages/About";
@@ -27,6 +28,7 @@ function App() {
         </Route>
       </Routes>
       <StoreFooter />
+      <Analytics />
     </BrowserRouter>
   );
 }
