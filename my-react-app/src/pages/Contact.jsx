@@ -1,15 +1,6 @@
-import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 function Contact() {
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    setSubmitted(true);
-    event.currentTarget.reset();
-  }
-
   return (
     <>
       <Navbar />
@@ -46,36 +37,14 @@ function Contact() {
 
             <h2>Send Message</h2>
 
-            <form onSubmit={handleSubmit}>
-
-              <input
-                type="text"
-                placeholder="Full Name"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-              />
-
-              <input
-                type="text"
-                placeholder="Subject"
-              />
-
-              <textarea
-                rows="5"
-                placeholder="Your Message"
-              ></textarea>
-
-              <button type="submit">
-                Send Support Request
-              </button>
-
-              {submitted && <p className="form-success" role="status">Thanks—your request has been noted. Our team will contact you using the details you provided.</p>}
-
-            </form>
-
+            <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="50d24f4b-2570-4474-9a47-227421aba313" />
+  <input type="text" name="name" placeholder="Enter Your Name" required />
+  <input type="phone" name="phone" placeholder="Enter Your Mobile number" required />
+  <input type="email" name="email" placeholder="Enter Your Email" required />
+  <textarea name="message" placeholder="message" required></textarea>
+  <button type="submit">Submit Form</button>
+</form>
           </div>
 
         </div>
