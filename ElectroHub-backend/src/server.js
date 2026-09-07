@@ -158,4 +158,12 @@ app.use((error, _req, res, _next) => {
   return res.status(500).json({ message: "Internal server error." });
 });
 
-app.listen(port, () => console.log(`Electronics Store API listening on http://localhost:${port}`));
+// Start the server only when running locally
+if (!process.env.VERCEL) {
+  app.listen(port, () =>
+    console.log(`Electronics Store API listening on http://localhost:${port}`)
+  );
+}
+
+// Export Express app for Vercel
+export default app;
