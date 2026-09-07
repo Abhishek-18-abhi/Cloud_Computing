@@ -1,0 +1,10 @@
+
+.vercel
+.env*
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
