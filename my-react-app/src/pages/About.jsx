@@ -7,11 +7,11 @@ function About() {
       <Navbar />
 
       <section className="about">
-        <span className="section-label">The ElectroHub story</span>
-        <h1>About ElectroHub</h1>
+        <span className="section-label">The Electronic Store story</span>
+        <h1>About Electronics Store</h1>
 
         <p>
-          Welcome to <strong>ElectroHub</strong>, your trusted destination
+          Welcome to <strong>Electronics Store</strong>, your trusted destination
           for the latest electronic gadgets and accessories.
           We provide premium-quality smartphones, laptops,
           smartwatches, headphones, and other electronic devices

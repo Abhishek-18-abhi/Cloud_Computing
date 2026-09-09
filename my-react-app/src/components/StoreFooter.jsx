@@ -5,7 +5,7 @@ function StoreFooter() {
     <footer className="store-footer">
       <div className="store-footer-grid">
         <section>
-          <p className="footer-kicker">ElectroHub</p>
+          <p className="footer-kicker">Electronics Store</p>
           <h2>Technology made easy to choose.</h2>
           <p>Browse useful electronics, review the details, and place your order through a simple checkout flow.</p>
         </section>
