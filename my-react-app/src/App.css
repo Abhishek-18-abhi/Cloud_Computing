@@ -1,0 +1,217 @@
+/* ================================
+   ELECTRONICS STORE - APP STYLES
+================================ */
+
+/* ---------- PRINT BILL ---------- */
+
+@media print {
+
+  /* Hide everything by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only the bill */
+  .bill-card,
+  .bill-card * {
+    visibility: visible;
+  }
+
+  /* Position bill at the top */
+  .bill-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+  }
+
+  /* Hide buttons */
+  .bill-actions {
+    display: none !important;
+  }
+
+  /* Improve printing */
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  /* Bill Header */
+  .bill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .bill-header h2 {
+    margin: 5px 0;
+  }
+
+  /* Customer Details */
+  .bill-customer {
+    margin-bottom: 20px;
+  }
+
+  .bill-customer p {
+    margin: 6px 0;
+  }
+
+  /* Table */
+  .bill-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .bill-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.7fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+  }
+
+  .bill-row-head {
+    font-weight: bold;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .bill-product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bill-product img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  /* Total */
+  .bill-total-box {
+    width: 300px;
+    margin-left: auto;
+    margin-top: 25px;
+  }
+
+  .bill-total-box > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .summary-total {
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid black;
+    margin-top: 8px;
+    padding-top: 10px !important;
+  }
+}
+
+
+/* ================================
+   NORMAL BILL PAGE
+================================ */
+
+.bill-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bill-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.bill-card {
+  background: white;
+  color: #111;
+  padding: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.bill-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #111;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.bill-header h2 {
+  margin: 8px 0;
+}
+
+.bill-customer {
+  margin-bottom: 25px;
+}
+
+.bill-customer p {
+  margin: 7px 0;
+}
+
+.bill-table {
+  width: 100%;
+}
+
+.bill-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.7fr 1fr;
+  gap: 15px;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bill-row-head {
+  font-weight: bold;
+  background: #f2f2f2;
+}
+
+.bill-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bill-product img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.bill-total-box {
+  width: 320px;
+  margin-left: auto;
+  margin-top: 25px;
+}
+
+.bill-total-box > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.summary-total {
+  border-top: 2px solid #111;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-top: 12px !important;
+}

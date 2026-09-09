@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "-": "^0.0.1-security.1",
     "@supabase/server": "^1.5.3",
-    "@supabase/supabase-js": "^2.115.0"
+    "@supabase/supabase-js": "^2.115.0",
+    "vercel": "^54.17.3"
   }
 }
