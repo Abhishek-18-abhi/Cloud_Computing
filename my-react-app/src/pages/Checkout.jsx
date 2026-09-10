@@ -259,7 +259,7 @@ function Checkout() {
         ) : (
           <section className="bill-page">
             <div className="bill-actions">
-              <button className="outline-btn" type="button" onClick={printBill}>
+              <button className="outline-btn" type="button" onClick={() => window.print()}>
                 Print Bill
               </button>
               <button className="remove-btn" type="button" onClick={clearCart}>
