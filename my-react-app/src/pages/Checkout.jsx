@@ -41,6 +41,9 @@ function Checkout() {
   function updateCustomer(field, value) {
     setCustomer((current) => ({ ...current, [field]: value }));
   }
+  function printBill() {
+  window.print();
+} 
 
   function openWhatsAppOrder() {
     const lines = cart.map((item, index) => (
