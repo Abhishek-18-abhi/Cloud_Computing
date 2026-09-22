@@ -19,7 +19,7 @@ function StoreFooter() {
 
         <section>
           <h3>Help</h3>
-          <Link to="/about">About ElectroHub</Link>
+          <Link to="/about">About Our Store</Link>
           <Link to="/contact">Contact support</Link>
           <Link to="/login">Your account</Link>
         </section>
@@ -27,11 +27,11 @@ function StoreFooter() {
         <section>
           <h3>Shop with confidence</h3>
           <p>Clear prices, secure checkout options, and a printable bill for completed purchases.</p>
-          <Link className="footer-contact" to="/contact">support@electrohub.com</Link>
+          <Link className="footer-contact" to="/contact">support@electronicstore.com</Link>
         </section>
       </div>
       <div className="store-footer-bottom">
-        <span>© 2026 ElectroHub. All rights reserved.</span>
+        <span>© 2026 Electronic Store. All rights reserved.</span>
         <span>Prices are listed in INR.</span>
       </div>
     </footer>
